@@ -1,0 +1,53 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\author{Nathaniel Beaver}
+\title{A Table of Commutation Relations}
+
+\usepackage[numbers]{natbib}
+\usepackage[pdftex,bookmarks=true]{hyperref}
+\hypersetup{
+    pdftitle={A Table of Commutation Relations},
+    pdfauthor={Nathaniel Beaver}
+}
+
+\usepackage{braket} %Bra ket notation
+
+\begin{document}
+\maketitle
+
+\section{The Table}
+
+\subsection{Operators to use}
+
+\begin{itemize}
+\item Observables (Hermitian): $x, p_x, H=\frac{p_x^2}{2m}, N=a^\dagger a, J_x, J_y, J_z, J, \hyperref[def_Pi]{\Pi}$
+\item Non-observables: $a, a^\dagger, T, $
+\end{itemize}
+
+
+\begin{tabular}{ l | r r }
+            & $x$ & $p_x$ \\
+\hline
+  $x$ & \hyperref[self]{$0$} & \hyperref[unc]{$i \hbar$}\\
+  \hyperref[def_p_x]{$p_x$} & $-i\hbar$ & $0$ \\
+\end{tabular}
+
+\newpage
+
+\section{Operator definitions}
+\begin{itemize}
+\item \label{def_p_x} $p_x = \frac{\hbar}{i}\frac{\partial}{\partial x}$ in the x-basis. Townsend p.158.
+\item \label{def_Pi} $\Pi\ket{x}=\ket{-x}$ Townsend p.213.
+\end{itemize}
+
+\section{References}
+\begin{itemize}
+\item \label{self} Any operator commutes with itself.
+\item \label{unc} See Townsend eq. 6.31, p. 155 or Griffiths eq. 2.51, p.55. This leads to the uncertainty principle $\Delta x \Delta p_x \geq \frac{\hbar}{2}$.
+\end{itemize}
+
+
+
+
+\end{document}
