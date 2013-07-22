@@ -37,7 +37,8 @@
 \DTLloaddb{mytable}{table-simple.csv}
 \renewcommand{\dtldisplayafterhead}{\hline} %
 \renewcommand{\dtlstringalign}{r} % make strings default to right-aligned
-\renewcommand{\dtlbetweencols}{|}
+
+%\renewcommand{\dtlbetweencols}{|} % this is fairly cosmetic, but I like it off
 \DTLdisplaydb{mytable}
 
 \newpage
@@ -53,8 +54,5 @@
 \item \label{self} Any operator commutes with itself.
 \item \label{unc} See Townsend eq. 6.31, p. 155 or Griffiths eq. 2.51, p.55. This leads to the uncertainty principle $\Delta x \Delta p_x \geq \frac{\hbar}{2}$.
 \end{itemize}
-
-
-
 
 \end{document}
