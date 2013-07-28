@@ -1,15 +1,15 @@
-\documentclass{minimal}
+\documentclass{article}
 \usepackage{datatool}
 \usepackage{filecontents}
 
 \begin{filecontents*}{data.csv}
-,$x$,$\int$,
 $x$,$0$,$i \hbar$
+,$x$,$p_x$
 \end{filecontents*}
 
 \begin{document}
 
-\DTLloaddb{mytable}{data.csv}
+\DTLloaddb[keys={column1,column2,column3}]{mytable}{data.csv}
 \DTLdisplaydb{mytable}
 
 \end{document}

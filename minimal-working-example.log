@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.21)  23 JUL 2013 02:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.21)  23 JUL 2013 03:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -157,25 +157,90 @@ LaTeX Font Info:    ... okay on input line 10.
 \dtlkeys@mytable=\toks38
 \dtlrows@mytable=\count112
 \dtlcols@mytable=\count113
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \intop 
+l.12 \DTLloaddb{mytable}{data.csv}
+                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \intop 
+l.12 \DTLloaddb{mytable}{data.csv}
+                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \dtl@ci@mytable@$ 
+l.12 \DTLloaddb{mytable}{data.csv}
+                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.12 \DTLloaddb{mytable}{data.csv}
+                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 13.
+(Font)              <7> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 13.
- [1{/home/nathaniel/.texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./minimal-
-working-example.aux) ) 
+(Font)              <5> on input line 12.
+! Extra \endcsname.
+\dtlcolumnindex ...\csname dtl@ci@#1@#2\endcsname 
+                                                  
+l.12 \DTLloaddb{mytable}{data.csv}
+                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Argument of \@dtl@get@keydata has an extra }.
+<inserted text> 
+                \par 
+l.12 \DTLloaddb{mytable}{data.csv}
+                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\db@plist@elt@w \db@col@id@w 1\db@col@id@end@ \db@key@id@w \db@key@id@end@ \ETC
+.
+! Paragraph ended before \@dtl@get@keydata was complete.
+<to be read again> 
+                   \par 
+l.12 \DTLloaddb{mytable}{data.csv}
+                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[1{/home/nathaniel/.texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./minimal-working-example.aux) ) 
 Here is how much of TeX's memory you used:
- 1820 strings out of 495059
- 23430 string characters out of 3182030
+ 1819 strings out of 495059
+ 23413 string characters out of 3182030
  99026 words of memory out of 3000000
- 5020 multiletter control sequences out of 15000+200000
+ 5019 multiletter control sequences out of 15000+200000
  3948 words of font info for 15 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 32i,8n,30p,267b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
-b>
-Output written on minimal-working-example.pdf (1 page, 23681 bytes).
+ 32i,7n,30p,267b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr10.pfb>
+Output written on minimal-working-example.pdf (1 page, 22634 bytes).
 PDF statistics:
  20 PDF objects out of 1000 (max. 8388607)
  13 compressed objects within 1 object stream
