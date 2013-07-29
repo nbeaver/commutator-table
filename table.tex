@@ -35,10 +35,13 @@
 %\end{tabular}
 \DTLloaddb[keys={A,B,C,D,E,F,G,H,I,J,K,L,M}]{commutators}{commutation-relations.csv}
 \renewcommand{\dtldisplayafterhead}{\hline} %
-\renewcommand{\dtlstringalign}{r} % make strings default to right-aligned
+\renewcommand{\dtlstringalign}{c} % make strings default to center-aligned
 
 %\renewcommand{\dtlbetweencols}{|} % this is fairly cosmetic, but I like it off
 \DTLdisplaydb{commutators}
+
+\DTLloaddb[keys={A,B,C,D}]{spin-one-half}{spin-one-half-system.csv}
+\DTLdisplaydb{spin-one-half}
 
 \newpage
 
