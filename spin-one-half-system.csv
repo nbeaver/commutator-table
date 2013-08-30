@@ -1,4 +1,0 @@
-"[row, column]",$S_x$,$S_y$,$S_z$
-$S_x$,0,$i \hbar S_z$,$-i \hbar S_y$
-$S_y$,$-i \hbar S_z$,0,$i \hbar S_x$
-$S_z$,$i \hbar S_y$,$-i \hbar S_x$,0
