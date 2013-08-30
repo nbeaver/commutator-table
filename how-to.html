@@ -1,0 +1,30 @@
+<h1>How do I add a commutation relation?</h1>
+
+<p>Open <code>commutation-relations.csv</code> with your favorite tabular data editor (e.g. Libreoffice Calc, Gnumeric, Excel) and navigate to the correct row and column.</p>
+
+<p>Add the value.</p>
+
+<p>Next, we need to link to the value. Do this by wrapping the value in a <code>hyperref</code> command, like this: <code>\hyperref[self]{0}</code>. This will create a link around the value <code>0</code> that will jump to the labeled called <code>self</code>.</p>
+
+<p>Finally, add a reference in the reference section in <code>table.tex</code>. This will give the link a target to jump to. Ideally, this would include a reference to the work cited.</p>
+
+<pre><code>\item[0] \label{self} Any operator commutes with itself. See book by *AUTHOR* on page *PAGE*.
+</code></pre>
+
+<h1>How do I add a new operator?</h1>
+
+<p>Open <code>commutation-relations.csv</code> with your favorite tabular data editor (e.g. Libreoffice Calc, Gnumeric, Excel) and make a new row and column with the name of your operator.</p>
+
+<p>Now change the line in <code>table.tex</code> like this:</p>
+
+<pre><code> \DTLloaddb[keys={A,B,C,D,E,F,G,H,I,J,K,L,M}]{commutators}{commutation-relations.csv}
+</code></pre>
+
+<p>so that it has the number of columns that the CSV requires. This is required for math markup to be available for operator definitions. See here for more information:</p>
+
+<p><a href="http://tex.stackexchange.com/questions/125060/datatool-cannot-use-math-macros-in-tabular-headers-from-csv-file">http://tex.stackexchange.com/questions/125060/datatool-cannot-use-math-macros-in-tabular-headers-from-csv-file</a></p>
+
+<p>Next, you should define the operator in <code>table.tex</code> as described above. The definitions are in the subsection <code>Operator definitions.</code> For example, the momentum operator is, in position space, defined as <code>i/hbar * d/dx</code>, so the relevant definition is:</p>
+
+<pre><code>\item \label{def_p_x} $p_x = \frac{\hbar}{i}\frac{\partial}{\partial x}$ in the x-basis. Townsend p.158.
+</code></pre>
