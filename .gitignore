@@ -2,6 +2,8 @@
 *.swp
 # Ignore LaTeX temp files
 *.aux
+*.bbl
+*.blg
 # *.log # We might need to see the error messages from the log file.
 *.out
 *.synctex.gz

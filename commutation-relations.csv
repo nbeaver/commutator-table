@@ -1,7 +1,7 @@
 "[row, column]",$x$,$p_x$,H,N,J,$J_x$,$J_y$,$J_z$,$\Pi$,$a$,$a^\dagger$,$T$
 $x$,\hyperref[self]{0},\hyperref[unc]{$i \hbar$},,,,,,,,,,
-\hyperref[def_p_x]{$p_x$},$-i\hbar$,0,,,,,,,,,,
-\hyperref[def_H]{H},,,0,,,,,,,,,
+\hyperref[def_p_x]{$p_x$},$-i\hbar$,0,0,,,,,,,,,
+\hyperref[def_H]{H},,\hyperref[H-p_x]{0},0,,,,,,,,,
 N,,,,0,,,,,,\hyperref[N-a]{$-a$},\hyperref[N-aDag]{$-a^\dagger$},
 J,,,,,0,,,,,,,
 $J_x$,,,,,,0,,,,,,
