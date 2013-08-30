@@ -18,7 +18,9 @@ Now change the line in `table.tex` like this:
 
      \DTLloaddb[keys={A,B,C,D,E,F,G,H,I,J,K,L,M}]{commutators}{commutation-relations.csv}
 
-so that it has the number of columns that the CSV requires. This is required for math markup to be available for operator definitions. See here for more information:
+so that it has the number of columns that the CSV requires. You are not required to use keys that are letters of the alphabet, but it is convenient since spreadsheets generally mark columns starting with A through Z and then to AA, AB, and so forth.
+
+This manual tracking of the keys is required for math markup to be available in the first row. See here for more information:
 
 <http://tex.stackexchange.com/questions/125060/datatool-cannot-use-math-macros-in-tabular-headers-from-csv-file>
 
