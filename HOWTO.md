@@ -10,7 +10,7 @@ Finally, add a reference in the reference section in `table.tex`. This will give
 
     \item[0] \label{self} Any operator commutes with itself. See book by *AUTHOR* on page *PAGE*.
 
-Remember to compile LaTeX twice to make the links work.
+Remember to compile LaTeX twice to make the `hyperref` links work.
 
 # How do I add a new operator? #
 
@@ -18,9 +18,15 @@ Open `commutation-relations.csv` with your favorite tabular data editor (e.g. Li
 
 Now change the line in `table.tex` like this:
 
-     \DTLloaddb[keys={A,B,C,D,E,F,G,H,I,J,K,L,M}]{commutators}{commutation-relations.csv}
+     \DTLloaddb[keys={A,B,C,D,E,F,G,H,I,J,K,L}]{commutators}{commutation-relations.csv}
 
 so that it has the number of columns that the CSV requires. You are not required to use keys that are letters of the alphabet, but it is convenient since spreadsheets generally mark columns starting with A through Z and then to AA, AB, and so forth.
+
+You can actually use more keys than necessary, and LaTeX will not complain. You can even use fewer keys than necessary, but only if the first row (column headers) does not use math markup. When `datatool` encounters a column header it cannot safely convert into a key, LaTeX throws this error:
+
+    ! Missing \endcsname inserted.
+
+This means you should check to make sure you have enough keys defined to match the CSV file.
 
 This manual tracking of the keys is required for math markup to be available in the first row. See here for more information:
 
@@ -30,4 +36,4 @@ Next, you should define the operator in [`table.tex`](./table.tex) as described 
 
     \item \label{def_p_x} $p_x = \frac{\hbar}{i}\frac{\partial}{\partial x}$ in the x-basis. Townsend p.158.
 
-Remember to compile twice to make the links work.
+Remember to compile twice to make the `hyperref` links work.
