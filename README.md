@@ -1,5 +1,4 @@
-What is this project about?
-===========================
+# What is this project about? #
 
 This is a table of commutation relations for quantum mechanical operators. They are useful for deriving relationships between physical quantities in quantum mechanics.
 
@@ -7,10 +6,9 @@ The commutator is a binary operation of two operators. If the operators are `A` 
 
     [A, B] = AB - BA
 
-https://en.wikipedia.org/wiki/Commutator#Ring_theory
+<https://en.wikipedia.org/wiki/Commutator#Ring_theory>
 
-Why are commutators important?
-==============================
+# Why are commutators important? #
 
 Commutation relations have deep physical significance in quantum physics.
 
@@ -20,16 +18,15 @@ Hermitian operators which commute are known as compatible observables, and can b
 
 Hermitian operators which do not commute are known as incompatible observables. The most famous of these is the canonical commutation relation:
 
-https://en.wikipedia.org/wiki/Canonical_commutation_relation
+<https://en.wikipedia.org/wiki/Canonical_commutation_relation>
 
 An operator which commutes with the Hamiltonian is a conserved quantity over time, like angular momentum or spin.
 
 Finally, commutation relations have freedom of representation, i.e. they do not depend on choice of basis. The relations work just as well in position space as they do in momentum space.
 
-https://en.wikipedia.org/wiki/Position_and_momentum_space
+<https://en.wikipedia.org/wiki/Position_and_momentum_space>
 
-Why is this compilation of commutation relations useful?
-========================================================
+# Why is this compilation of commutation relations useful? #
 
 No textbooks compile an exhaustive list of commutation relations, they just use the ones necessary for relevant derivations. This is fine, as long as you can find the ones you need.
 
@@ -43,6 +40,6 @@ To make it manageable to use the tabular data, the `LaTeX` package `datatool` tr
 
 Datatool is already included in standard `LaTeX` installations, but you can see the CTAN package here:
 
-http://www.ctan.org/tex-archive/macros/latex/contrib/datatool
+<http://www.ctan.org/tex-archive/macros/latex/contrib/datatool>
 
-If you want to get learn how to get started, look in `how-to.markdown` for more information.
+If you want to get learn how to get started, look in [`how-to.md`](./how-to.md) for more information.

@@ -16,3 +16,5 @@
 # Ignore LibreOffice lock files, e.g. .~lock.name_of_spreadsheet.ods#
 *.ods#
 *.csv#
+# Ignore other temp files
+.md~
