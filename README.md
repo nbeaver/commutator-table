@@ -30,18 +30,18 @@ Finally, commutation relations have freedom of representation, i.e. they do not 
 
 No textbooks compile an exhaustive list of commutation relations, they just use the ones necessary for relevant derivations. This is fine, as long as you can find the ones you need.
 
-The trouble is that the square bracket notation make finding a particular commutation relation very difficult. This keeps the relations compact, but since the same notation is used for grouping expressions (among other things) it can be difficult to scan through the pages quickly. Moreover, some textbooks contain misprints or are ambiguous about which operators commute and under what circumstances.
+The trouble is that the square bracket notation makes finding a particular commutation relation very difficult. This keeps the relations compact, but since the same notation is used for grouping expressions (among other things) it can be difficult to scan through the pages quickly. Moreover, some textbooks contain misprints or are ambiguous about which operators commute and under what circumstances.
 
 A complete set of commutation relations is both useful for quick reference and aesthetically pleasing.
 
 Since this table uses `LaTeX`, all of the mathematical notation is available and links to references are straightforward to implement.
 
-To make it manageable to use the tabular data, the `LaTeX` package `datatool` transforms a CSV file into a LaTeX table automatically during compilation. 
+To make it manageable to use the tabular data, the `LaTeX` package `datatool` transforms a CSV file into a `LaTeX` table automatically during compilation. 
 
 Datatool is already included in standard `LaTeX` installations, but you can see the CTAN package here:
 
 <http://www.ctan.org/tex-archive/macros/latex/contrib/datatool>
 
-If you just want to see the table itself, check out the [pdf file](./table.pdf), generated from the LaTeX source. It is incomplete.
+If you just want to see the table itself, check out the [pdf file](./table.pdf), generated from the `LaTeX` source. It is incomplete.
 
 If you want to how to get started improving the table, look at the [how-to instructions](./HOWTO.md) and [to-do list](./TODO.md) for more information.
