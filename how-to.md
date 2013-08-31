@@ -1,6 +1,6 @@
 # How do I add a commutation relation? #
 
-Open `commutation-relations.csv` with your favorite tabular data editor (e.g. Libreoffice Calc, Gnumeric, Excel) and navigate to the correct row and column.
+Open [`commutation-relations.csv`](./commutation-relations.csv) with your favorite tabular data editor (e.g. Libreoffice Calc, Gnumeric, Excel) and navigate to the correct row and column.
 
 Add the value.
 
@@ -24,6 +24,6 @@ This manual tracking of the keys is required for math markup to be available in 
 
 <http://tex.stackexchange.com/questions/125060/datatool-cannot-use-math-macros-in-tabular-headers-from-csv-file>
 
-Next, you should define the operator in `table.tex` as described above. The definitions are in the subsection `Operator definitions.` For example, the momentum operator is, in position space, defined as `i/hbar * d/dx`, so the relevant definition is:
+Next, you should define the operator in [`table.tex`](./table.tex) as described above. The definitions are in the subsection `Operator definitions.` For example, the momentum operator is, in position space, defined as <sup>i</sup>&frasl;<sub>&#8463;</sub> <sup>&part;</sup>&frasl;<sub>&part;x</sub>, so the relevant definition is:
 
     \item \label{def_p_x} $p_x = \frac{\hbar}{i}\frac{\partial}{\partial x}$ in the x-basis. Townsend p.158.
