@@ -1,6 +1,6 @@
 # What is this project about? #
 
-This is a table of commutation relations for quantum mechanical operators. They are useful for deriving relationships between physical quantities in quantum mechanics.
+This is a [table of commutation relations](./table.pdf) for quantum mechanical operators. They are useful for deriving relationships between physical quantities in quantum mechanics.
 
 The commutator is a binary operation of two operators. If the operators are `A` and `B`, their commutator is:
 
@@ -42,4 +42,6 @@ Datatool is already included in standard `LaTeX` installations, but you can see 
 
 <http://www.ctan.org/tex-archive/macros/latex/contrib/datatool>
 
-If you want to get learn how to get started, look in [`how-to.md`](./how-to.md) for more information.
+If you just want to see the table itself, check out the [pdf file](./table.pdf), generated from the LaTeX source. It is incomplete.
+
+If you want to how to get started improving the table, look at the [how-to instructions](./HOWTO.md) and [to-do list](./TODO.md) for more information.
