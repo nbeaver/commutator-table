@@ -5,6 +5,8 @@
 - [x] Separate single particle and two particle operators (done).
 - [ ] Add spin-1/2 system separately?
 
+The table will probably grow large enough that a larger format of paper will be required.
+
 ## Operators to add. ##
 
 Should vector operators be separate?
