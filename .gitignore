@@ -4,7 +4,7 @@
 *.aux
 *.bbl
 *.blg
-# *.log # We might need to see the error messages from the log file.
+*.log # Log files clutter merges, so a good commit shouldn't included the log file. Only add if the build is wrong and the relevant error needs to be tracked.
 *.out
 *.synctex.gz
 # Ignore LaTeX output files
