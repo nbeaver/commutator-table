@@ -22,18 +22,12 @@
 \subsection{Operators to use.}
 
 \begin{itemize}
-\item Observables (Hermitian): $x, p_x, H=\frac{p_x^2}{2m}, N=a^\dagger a, J_x, J_y, J_z, J, \hyperref[def_Pi]{\Pi}$
+\item Observables (Hermitian): $x, p_x, H, N=a^\dagger a, J_x, J_y, J_z, J, \hyperref[def_Pi]{\Pi}$
 \item Non-observables: $a, a^\dagger, T, $
 \end{itemize}
 
 \subsection{The table.}
 
-%\begin{tabular}{ l | r r }
-%            & $x$ & $p_x$ \\
-%\hline
-%  $x$ & \hyperref[self]{$0$} & \hyperref[unc]{$i \hbar$}\\
-%  \hyperref[def_p_x]{$p_x$} & $-i\hbar$ & $0$ \\
-%\end{tabular}
 \DTLloaddb[keys={A,B,C,D,E,F,G,H,I,J,K,L,M}]{commutators}{commutation-relations.csv}
 \renewcommand{\dtldisplayafterhead}{\hline} %
 \renewcommand{\dtlstringalign}{c} % make strings default to center-aligned
@@ -56,7 +50,7 @@
 \subsection{References.}
 \begin{itemize}
 \item[0] \label{self} Any operator commutes with itself.
-\item[$-i \hbar$] \label{unc} See Townsend eq. 6.31, p. 155 or Griffiths eq. 2.51, p.55. This leads to the uncertainty principle $\Delta x \Delta p_x \geq \frac{\hbar}{2}$.
+\item[$i\hbar\frac{\partial}{\partial x} V(x)$] \label{unc} See Townsend eq. 6.31, p. 155 or Griffiths eq. 2.51, p.55. This leads to the uncertainty principle $\Delta x \Delta p_x \geq \frac{\hbar}{2}$.
 \item[$-a$] \label{N-a} See Sakurai p.90, (2.3.10).
 \item[$-a^\dagger$] \label{N-aDag} See Sakurai p.90, (2.3.11).
 \item[0] \label{H-p_x} By the product rule.
